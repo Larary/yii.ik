@@ -9,8 +9,20 @@ use app\models\OneDateForm;
 
 class ReportsController extends Controller{
     
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+        ];
+    }
+    
     public function actionIndex()
     {
+        Yii::$app->view->params['active_link'] = 0;//передаем значение активной ссылки в layout для подсветки меню
+        Yii::$app->view->params['sidebar_link'] = 0; //подсветка пункта sidebar
+        
         return $this->render('index');
     }
 

@@ -3,14 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/OpenServer/domains/yii.ik/views/reports/pl.php</file>
-            <file>file:/E:/OpenServer/domains/yii.ik/views/reports/bal.php</file>
+            <file>file:/E:/OpenServer/domains/yii.ik/config/web.php</file>
             <file>file:/E:/OpenServer/domains/yii.ik/views/layouts/header.php</file>
-            <file>file:/E:/OpenServer/domains/yii.ik/views/reports/ds-compare.php</file>
-            <file>file:/E:/OpenServer/domains/yii.ik/models/OneDateForm.php</file>
             <file>file:/E:/OpenServer/domains/yii.ik/controllers/ReportsController.php</file>
-            <file>file:/E:/OpenServer/domains/yii.ik/web/css/style.css</file>
-            <file>file:/E:/OpenServer/domains/yii.ik/views/reports/index.php</file>
         </group>
     </open-files>
 </project-private>

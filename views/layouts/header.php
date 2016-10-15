@@ -56,12 +56,12 @@ AppAsset::register($this);
         </div><!-- /.container -->
     </nav>    
     <div class="container">
-        <div class = "col-md-3"><!-- sidebar -->
-            <h4 class="text-center"><?php echo ($this->title=='Главная страница') ? '' : 'Отчеты'?></h4>
+        <div class = "col-md-3"><!-- sidebar -->           
             <ul class="list-group">
                 <?php 
                 switch ($this->params['active_link']){
                     case 1:?>
+                        <h4 class="text-center">Отчеты</h4>
                         <li <?php echo ($this->params['sidebar_link']==1) ? 'class="list-group-item active-link"' : 'class="list-group-item"'?>><?= Html::a('Доходы по вводу в разрезе платежных систем', ['reports/vvod-ps']) ?></li>
                         <li <?php echo ($this->params['sidebar_link']==2) ? 'class="list-group-item active-link"' : 'class="list-group-item"'?>><?= Html::a('Доходы по выводу в разрезе платежных систем', ['reports/vivod-ps']) ?></li>
                         <li <?php echo ($this->params['sidebar_link']==3) ? 'class="list-group-item active-link"' : 'class="list-group-item"'?>><?= Html::a('Доходы по вводу в разрезе мерчантов', ['reports/vvod-mch']) ?></li>
@@ -69,12 +69,14 @@ AppAsset::register($this);
                     <?php
                     break;
                     case 2:?>
+                        <h4 class="text-center">Отчеты</h4>
                         <li <?php echo ($this->params['sidebar_link']==5) ? 'class="list-group-item active-link"' : 'class="list-group-item"'?>><?= Html::a('Денежные средства на счетах мерчантов', ['reports/ds-merch']) ?></li>
                         <li <?php echo ($this->params['sidebar_link']==6) ? 'class="list-group-item active-link"' : 'class="list-group-item"'?>><?= Html::a('Денежные средства в платежных системах', ['reports/ds-ps']) ?></li>
                         <li <?php echo ($this->params['sidebar_link']==7) ? 'class="list-group-item active-link"' : 'class="list-group-item"'?>><?= Html::a('Сравнение остатков ДС по мерчантам и ПС', ['reports/ds-compare']) ?></li>	
                     <?php
                     break;
                     case 3:?>
+                        <h4 class="text-center">Отчеты</h4>
                         <li <?php echo ($this->params['sidebar_link']==8) ? 'class="list-group-item active-link"' : 'class="list-group-item"'?>><?= Html::a('Отчет о прибылях и убытках', ['reports/pl']) ?></li>
                         <li <?php echo ($this->params['sidebar_link']==9) ? 'class="list-group-item active-link"' : 'class="list-group-item"'?>><?= Html::a('Отчет о финансовом состоянии', ['reports/bal']) ?></li>
                     <?php
